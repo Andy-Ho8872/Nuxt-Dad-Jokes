@@ -1,5 +1,4 @@
 <template>
-
   <div>
     <!-- search area -->
     <v-container>
@@ -30,7 +29,6 @@
       </v-card-text>
     </v-card>
   </div>
-  
 </template>
 
 <script>
