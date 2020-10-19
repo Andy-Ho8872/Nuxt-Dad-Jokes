@@ -92,10 +92,12 @@
 
     <!-- Footer -->
     <v-footer
-      :absolute="!fixed"
-      app
+    :absolute="!fixed"
+    app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-row class="text-center">
+        <div class="p-4 mx-auto">&copy; {{ new Date().getFullYear() }}</div>
+      </v-row>
     </v-footer>
 
   </v-app>
