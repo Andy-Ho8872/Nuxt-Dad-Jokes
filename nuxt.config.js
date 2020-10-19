@@ -58,5 +58,20 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+// deployment to github
+  router: {
+    // The path of all assets will use 'base' as prefix
+    base: '/Nuxt-Dad-Jokes'// repo name
+  }, 
 }
+// to check condition if contains <repo-name> 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
+  ? {
+      router: {
+        base: '/Nuxt-Dad-Jokes'
+      }
+    }
+  : {}
+routerBase
