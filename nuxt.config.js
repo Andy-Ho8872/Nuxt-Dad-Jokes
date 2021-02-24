@@ -60,7 +60,7 @@ export default {
   build: {
   },
 
-// // deployment to github
+// // deploy to github
 //   router: {
 //     // The path of all assets will use 'base' as prefix
 //     base: '/Nuxt-Dad-Jokes'// repo name
